@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Wed Aug 03 07:40:34 UTC 2022
+description=IFlow to send sample data from HTTP(Postman) to Mail
+source=Hybris
+target=ELM
