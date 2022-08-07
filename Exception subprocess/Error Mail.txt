@@ -1,0 +1,39 @@
+Mail Subject:SAP CPI ${property.TenantName} Environment Error at ${camelId} 
+
+Hi Team,
+
+There is a messagefailure in below Integration scenario of SAP CPI Server ${property.TenantName}.Refer Corresponding error.
+
+CPI Teanent : ${property.TenantName}
+
+Environment : ${property.ApplicationURL}
+
+Interface Name : ${camelId}
+
+Message ID : ${property.SAP_MessageProcessingLogID}
+
+Timestamp : ${date:now:yyyy-MM-dd'T'hh:mm:ss'Z'}
+
+Error Reason : ${exception.message}
+
+
+Thanks,
+SAP CPI Admin
+
+Hello Team,
+
+Message has been failed with below error:
+
+Error detail: ${exception.message}
+
+Correlation ID: ${header.SAP_MplCorrelationId}
+
+Message ID: ${property.SAP_MessageProcessingLogID}
+
+Iflow Name: ${camelId}
+
+Date: ${date:now:dd-MM-yyyy HH:mm} / SAP CPI – Tenant Number: ${property.SystemName}
+
+Thanks & Regards,
+
+SAP CPI Team
